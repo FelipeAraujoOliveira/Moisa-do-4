@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisa do 4 para CIPA</title>
+    <style>
+        :root {
+            --amarelo: #F7B700;
+            --verde-escuro: #215A1F;
+            --branco: #FFFFFF;
+            --azul-escuro: #2B2D42;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #1e521c, var(--amarelo));
+            color: var(--branco);
+            font-size: 2vh;
+        }
+        
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: var(--branco);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: var(--azul-escuro);
+        }
+        
+        .section {
+            margin: 20px 0;
+        }
+        
+        .section h2 {
+            color: var(--verde-escuro);
+        }
+        
+        .section p {
+            color: var(--azul-escuro);
+            line-height: 1.6;
+        }
+        
+        .propostas {
+            background-color: var(--verde-escuro);
+            padding: 10px;
+            border-radius: 8px;
+            color: var(--branco);
+        }
+        
+        .propostas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .propostas li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .propostas li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        .media {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+        
+        footer {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moisa do 4 para CIPA</h1>
+        <p>🪚✨ Propostas que Colocam Tudo no Lugar! ✨🪚</p>
+    </header>
+
+    <main>
+        <!-- Sobre a Candidatura -->
+        <section class="section">
+            <h2>Sobre Moisa do 4</h2>
+            <p>👷‍♂️ Como marceneiro experiente, Moisa sabe que para construir um ambiente de trabalho seguro, é preciso ter cuidado e precisão. É por isso que ele quer trazer sua expertise para a CIPA e garantir que todos nós tenhamos um espaço mais seguro e organizado.</p>
+        </section>
+
+        <!-- Propostas -->
+        <section class="section propostas">
+            <h2>Propostas de Moisa do 4</h2>
+            <ul>
+                <img src="WhatsApp Image 2024-10-31 at 08.19.44.jpeg" alt="" style="width: 100%; margin-bottom: 20px; border-radius: 1vh;">
+                <li>🔨 Segurança em Primeiro Lugar: Moisa vai focar na prevenção de acidentes com campanhas de conscientização e melhorias nas condições de trabalho.</li>
+                <li>🛠️ Manutenção Preventiva: Assim como cuida das suas ferramentas, ele quer garantir que todos os equipamentos da universidade estejam em perfeito estado, evitando riscos.</li>
+                <li>🧰 Treinamentos Práticos: Oferecer treinamentos acessíveis para todos os funcionários, ensinando boas práticas de segurança.</li>
+                <li>🔩 Diálogo e Participação: Moisa acredita que a segurança é responsabilidade de todos. Por isso, vai incentivar a participação ativa dos colaboradores nas decisões da CIPA.</li>
+            </ul>
+        </section>
+
+        <!-- Área de Mídia para Imagens e Vídeos -->
+        <section class="section media">
+            <h2>Galeria</h2>
+            <p>Confira o vídeos de divulgação!</p>
+            
+            <!-- Iframe de Vídeo -->
+            <iframe src="https://www.youtube.com/embed/W8nhgztl8b8?si=NBOawBfi7dfhrl5j" title="Vídeo de campanha do Moisa do 4"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Moisa do 4 para CIPA - Propostas que Colocam Tudo no Lugar!</p>
+    </footer>
+
+    <!-- Música de Fundo -->
+    <audio id="backgroundMusic" src="WhatsApp-Audio-2024-10-31-at-08.19.27.mp3" preload="auto"></audio>
+
+    <!-- Script para tocar a música ao carregar a página -->
+    <script>
+        window.addEventListener('load', function() {
+            const audio = document.getElementById('backgroundMusic');
+            audio.play().catch(error => {
+                console.log("Reprodução automática bloqueada. O usuário precisa interagir com a página para iniciar a música.");
+            });
+        });
+    </script>
+</body>
+</html>
